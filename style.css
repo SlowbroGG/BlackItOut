@@ -57,3 +57,128 @@ nav {
     z-index: 10000;
     margin-bottom: 13rem;
 }
+
+/* Apply some styles to the logo element */
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+/* Apply some styles to the logo span element */
+.logo span {
+    color: var(--bg);
+}
+
+/* Apply som styles to logo when being hovered */
+.logo:hover {
+    color: var(--black);
+    background-color: var(--white);
+    font-size: 4rem;
+    border-radius: 0.2em;
+    transition: all linear 0.6s;
+}
+
+/* Apply some styles to the nav links */
+nav .links a {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-right: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    position: relative;
+}
+
+/* Apply some styles to the nav links after being hovered */
+nav .links a:after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--bg);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s;
+}
+
+/* Apply some styles to the nav links after being hovered */
+nav .links a:hover::after {
+    width: 100%;
+}
+
+/* Apply some styles to the menu button and close button */
+nav #menu-btn,
+nav #close {
+    color: var(--white);
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Apply some styles to the .header .content element */
+.header .content {
+    padding: 150px 7%;
+    color: var(--white);
+}
+
+/* Apply some styles to the .header .content h3 element */
+.header .content h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 3rem 0;
+}
+
+/* The following styles apply to the h1 element inside a content element within a header element */
+.header .content h1 {
+    font-size: 4.5rem; 
+    letter-spacing: 2px; 
+}
+
+/* The following styles apply to the p element inside a content element within a header element */
+.header .content p {
+    font-size: 1.3rem; 
+    line-height: 1.8;; 
+    padding: 2rem 0; 
+}
+
+/* The following styles apply to elements with the class 'btn' */
+.btn {
+    padding: 1.3rem 5rem; 
+    margin: 3rem 0; 
+    cursor: pointer; /* Change cursor to pointer */
+    color: var(--black); 
+    background: var(--white);
+    font-size: 1.4rem; 
+    font-weight: 500; 
+    border-radius: 7px; 
+    transition: all linear 0.5s; /* Add transition for all properties with linear timing function over a duration of 0.5s */
+}
+
+/* The following styles apply when hovering over an element with the class 'btn' */
+.btn:hover {
+    background: var(--black); 
+    color: var(--white); 
+    font-size: 2rem;
+    transform: translate(0px, -3px); /* Move the element 3px up using translate() transform */
+}
+
+.shop-btn {
+   display: flex;
+margin-left: auto;
+margin-right: auto;
+border: none;
+box-shadow: 0px 0px 10px 0px rgb(195, 193, 193); /* Add box-shadow */
+}
+
+/* Applies to elements with the class 'nav-change' */
+.nav-change {
+    background: rgba(0, 0, 0, 0.9); 
+}
+
+/* Applies to elements with the class 'container' inside an element with the class 'about' */
+.about .container {
+    display: flex; 
+    justify-content: space-between; 
+    padding-top: 8%; 
+}

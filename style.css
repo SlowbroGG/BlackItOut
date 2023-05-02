@@ -208,3 +208,182 @@ box-shadow: 0px 0px 10px 0px rgb(195, 193, 193); /* Add box-shadow */
     color: var(--font-heading); 
     padding: 1rem 0; /* adds 1rem of padding to the top and bottom of the h1 element */
 }
+
+.about .container .about-content h3 {
+    color: var(--black); 
+    font-size: 1.3rem; 
+    font-weight: 600; 
+    letter-spacing: 1px; 
+    padding: 1rem 0; 
+}
+
+.about .container .about-content p {
+    font-size: 1.4rem; 
+    font-weight: 300; 
+    color: var(--black); 
+    line-height: 1.5; 
+}
+
+
+/* This applies to the main heading */
+.heading {
+    font-size: 5rem; 
+    text-align: center; 
+}
+
+.heading span {
+    color: var(--font-heading); /* sets the color of the span element to the value of the CSS variable "--font-heading" */
+}
+
+/* This applies to the heading description */
+.heading-description {
+    text-align: center; 
+    padding: 1.3rem 0; 
+    font-size: 1.6rem; 
+    font-weight: 300; 
+}
+
+
+/* Sets padding for product section */
+.product{
+    padding-top: 15%;
+}
+
+/* Grid layout for product section */
+.product .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 2rem;
+    padding: 2.5rem 0;
+    grid-row-gap: 4rem;
+}
+
+/* Styles for product box */
+.product .container .product-box {
+    background: var(--white);
+    height: auto;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(179, 179, 179, 0.2);
+    padding-bottom: 3rem;
+    border-radius: 10px;
+}
+
+/* Styles for product image */
+.product .container .product-box img {
+    width: 100%;
+    height: 65%;
+    border-radius: 10px;
+}
+
+/* Styles for product content */
+.product .container .product-box .product-content {
+    padding: 1.5rem;
+}
+
+/* Styles for product title */
+.product .container .product-box .product-content h3 {
+    font-size: 2.5rem;
+    padding: 1.3rem 0;
+}
+
+/* Styles for product description */
+.product .container .product-box .product-content p {
+    font-size: 1.6rem;
+    padding: 1.3rem 0;
+    font-weight: 400;
+    color: var(--black);
+}
+
+/* Styles for product box on hover */
+.product .container .product-box:hover {
+    transform: translateY(-1rem);
+}
+
+/* Grid layout for contact section */
+.contact .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    padding: 2.5rem 0;
+}
+
+/* Styles for contact box */
+.contact .container .contact-box {
+    border-radius: 1rem;
+    padding: 2rem;
+    cursor: pointer;
+    background: var(--black);
+    color: var(--white);
+    box-shadow: 5px 5px 10px rgba(179, 179, 179, 0.2);
+}
+
+/* Styles for contact box div */
+.contact .container .contact-box div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+
+/* Styles for contact box icon */
+.contact .container .contact-box div i {
+    width: 4rem;
+    height: 4rem;
+    background: var(--bg);
+    color: var(--white);
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 4rem;
+    border-radius: 100%;
+}
+
+/* Styles for contact box title */
+.contact .container .contact-box div h2 {
+    font-size: 1.8rem;
+}
+
+/* Styles for contact box subtitle */
+.contact .container .contact-box div h2 span {
+    font-weight: 300;
+}
+
+/* Styles for contact box description */
+.contact .container .contact-box div p {
+    font-size: 1.5rem;
+}
+
+/* This styles the contact box when hovered over */
+.contact .container .contact-box:hover {
+    background: var(--white);
+    color: var(--black);
+}
+
+/* This styles the footer */
+.footer {
+    background-color: #131313;
+    color: white;
+    padding: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-top: 18rem;
+    }
+
+/* This styles the container inside the footer */
+.footer .container {
+    display: flex; /* use flexbox to center the footer-box elements */
+    justify-content: center;
+    flex-wrap: wrap; /* wrap the footer-box elements onto the next row if needed */
+  }
+
+/* This styles each box within the footer container */
+.footer .container .footer-box {
+    width: 30%; /* set the width of each footer-box element */
+    margin: 1rem; /* add margin around each footer-box element */
+    text-align: center; /* center the content of each footer-box element */
+}
+
+/* This styles the heading within each footer box */
+.footer .container .footer-box h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}

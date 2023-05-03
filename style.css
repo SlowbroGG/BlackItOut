@@ -387,3 +387,86 @@ box-shadow: 0px 0px 10px 0px rgb(195, 193, 193); /* Add box-shadow */
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
+
+/* This styles the text within each footer box */
+.footer .container .footer-box p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* This styles the input field within the footer form */
+.footer .container .footer-box form{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    max-width: 500px; /* set a maximum width for the form element */
+    width: 60%; /* set the width of the form element to 100% of its parent container */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer .container .footer-box input{
+    flex: 1; /* set the input element to take up remaining space */
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+
+/* This styles the link within the footer text */
+.footer .container .footer-box p a {
+    color: var(--bg);
+}
+
+/* This styles the button within the footer form */
+.footer .container .footer-box button {
+    background-color: var(--bg);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.footer .container .footer-box div a {
+    margin: 1.5rem;
+    color: var(--white);
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#copyright{ 
+  color: var(--white);
+  font-size: 1.7rem;
+  text-decoration: none; /* Underline not display */
+}
+
+#copyright:hover{ 
+    color: var(--black);
+    background: var(--white);
+    border-radius: 5px;
+    font-size: 2rem;
+    text-decoration: none; /* Underline not display */
+  }
+
+/* This applies styles when the screen is smaller than 991px wide*/
+@media only screen and (max-width: 991px) {
+    html {
+        font-size: 55%; 
+    }
+
+    nav {
+        padding: 3rem 3rem;
+    }
+
+    .content {
+        text-align: center;
+    }
+    .product{
+        padding-top: 30%;
+    }
+}

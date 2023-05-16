@@ -42,7 +42,7 @@ html {
 
 /* Apply some styles to all section elements */
 section {
-    padding: 8rem 7%;
+    padding: 3rem 0%;
 }
 
 /* Apply some styles to the nav element */
@@ -55,7 +55,7 @@ nav {
     left: 0;
     right: 0;
     z-index: 10000;
-    margin-bottom: 13rem;
+    margin-bottom: 3rem;
 }
 
 /* Apply some styles to the logo element */
@@ -142,6 +142,7 @@ nav #close {
     padding: 2rem 0; 
 }
 
+  
 /* The following styles apply to elements with the class 'btn' */
 .btn {
     padding: 1.3rem 5rem; 
@@ -179,14 +180,14 @@ box-shadow: 0px 0px 10px 0px rgb(195, 193, 193); /* Add box-shadow */
 /* Applies to elements with the class 'container' inside an element with the class 'about' */
 .about .container {
     display: flex; 
-    justify-content: space-between; 
-    padding-top: 8%; 
+    text-align: center;
+    justify-content: center;
 }
 
 /* The following styles apply to elements with the class 'image' inside an element with the class 'container' inside an element with the class 'about' */
 .about .container .image {
-    flex-basis: 50%; 
-    background: url(./img/about.jpeg); 
+    flex-basis: 36%; 
+    background: url(./img/about.png); 
     background-size: cover; 
     background-repeat: no-repeat; 
     padding: 16rem 0; 
@@ -195,6 +196,7 @@ box-shadow: 0px 0px 10px 0px rgb(195, 193, 193); /* Add box-shadow */
     justify-content: center; 
     align-items: center; 
     box-shadow: 0px 0px 10px 0px rgb(195, 193, 193); /* Add box-shadow */
+    margin-right: 2em;
 }
 
 
@@ -205,7 +207,7 @@ box-shadow: 0px 0px 10px 0px rgb(195, 193, 193); /* Add box-shadow */
 
 .about .container .about-content h1 {
     font-size: 4rem; 
-    color: var(--font-heading); 
+    color: var(--black); 
     padding: 1rem 0; /* adds 1rem of padding to the top and bottom of the h1 element */
 }
 
@@ -218,10 +220,11 @@ box-shadow: 0px 0px 10px 0px rgb(195, 193, 193); /* Add box-shadow */
 }
 
 .about .container .about-content p {
-    font-size: 1.4rem; 
+    font-size: 1.6rem; 
     font-weight: 300; 
     color: var(--black); 
     line-height: 1.5; 
+    margin-top: 1rem;
 }
 
 
@@ -243,10 +246,29 @@ box-shadow: 0px 0px 10px 0px rgb(195, 193, 193); /* Add box-shadow */
     font-weight: 300; 
 }
 
+.slideshow-container {
+    max-width: 85%;
+    position: relative;
+    margin: auto;
+  }
+  
+  .slideshow-slide {
+    display: none;
+    width: 100%;
+  }
+  
+  .slideshow-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+  }
+  
+  /* Add styles for slideshow navigation here (optional) */
+  
 
 /* Sets padding for product section */
 .product{
-    padding-top: 15%;
+    padding-top: 10%;
 }
 
 /* Grid layout for product section */
@@ -297,6 +319,10 @@ box-shadow: 0px 0px 10px 0px rgb(195, 193, 193); /* Add box-shadow */
 /* Styles for product box on hover */
 .product .container .product-box:hover {
     transform: translateY(-1rem);
+}
+
+.contact {
+    padding-bottom: 5rem;
 }
 
 /* Grid layout for contact section */
@@ -358,86 +384,63 @@ box-shadow: 0px 0px 10px 0px rgb(195, 193, 193); /* Add box-shadow */
     color: var(--black);
 }
 
-/* This styles the footer */
-.footer {
+  .footer {
     background-color: #131313;
     color: white;
     padding: 2rem;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    margin-top: 18rem;
-    }
-
-/* This styles the container inside the footer */
-.footer .container {
-    display: flex; /* use flexbox to center the footer-box elements */
-    justify-content: center;
-    flex-wrap: wrap; /* wrap the footer-box elements onto the next row if needed */
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-/* This styles each box within the footer container */
-.footer .container .footer-box {
-    width: 30%; /* set the width of each footer-box element */
-    margin: 1rem; /* add margin around each footer-box element */
-    text-align: center; /* center the content of each footer-box element */
-}
+  .social-icons{
+    padding-left: 20rem;
+  }
 
-/* This styles the heading within each footer box */
-.footer .container .footer-box h3 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
+  .newsletter{
+    padding-right: 20rem;
+  }
 
-/* This styles the text within each footer box */
-.footer .container .footer-box p {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
-/* This styles the input field within the footer form */
-.footer .container .footer-box form{
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-    max-width: 500px; /* set a maximum width for the form element */
-    width: 60%; /* set the width of the form element to 100% of its parent container */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.footer .container .footer-box input{
-    flex: 1; /* set the input element to take up remaining space */
-  padding: 0.5rem;
-  margin-right: 0.5rem;
-  border: none;
-  border-radius: 5px;
-}
-
-
-/* This styles the link within the footer text */
-.footer .container .footer-box p a {
-    color: var(--bg);
-}
-
-/* This styles the button within the footer form */
-.footer .container .footer-box button {
-    background-color: var(--bg);
+  .social-icons a {
     color: white;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .social-icons, .newsletter h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: white;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 8px;
     border: none;
-    padding: 0.5rem;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 200px;
+  }
+  
+  .newsletter button[type="submit"] {
+    padding: 8px;
+    background-color: #fff;
+    color: #131313;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-}
+  }
 
-.footer .container .footer-box div a {
-    margin: 1.5rem;
-    color: var(--white);
-    display: inline-block;
-    width: 3rem;
-    height: 3rem;
-    line-height: 3rem;
+  .fab, #subscribe {
+    padding-top: 1.5rem;
     text-align: center;
-    font-size: 3rem;
-}
+  }
+
+  .fab{
+    padding-left: 0.7rem;
+  }
 
 #copyright{ 
   color: var(--white);
@@ -453,6 +456,29 @@ box-shadow: 0px 0px 10px 0px rgb(195, 193, 193); /* Add box-shadow */
     text-decoration: none; /* Underline not display */
   }
 
+  .hr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hr {
+    width: 50vw;
+    height: 0.5vh;
+    background: var(--black);
+    border-radius: 1rem;
+  }
+  
+  .dot {
+    width: 1rem;
+    height: 1rem;
+    background: var(--black);
+    border-radius: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  
 /* This applies styles when the screen is smaller than 991px wide*/
 @media only screen and (max-width: 991px) {
     html {
@@ -466,10 +492,28 @@ box-shadow: 0px 0px 10px 0px rgb(195, 193, 193); /* Add box-shadow */
     .content {
         text-align: center;
     }
-    .product{
-        padding-top: 30%;
+    .footer {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .social-icons {
+        margin-bottom: 1rem;
+      }
+      
+      .newsletter input[type="email"] {
+        margin-bottom: 1rem;
+      }
+
+      .social-icons{
+        padding-left: 0;
+      }
+    
+      .newsletter{
+        padding-right: 0;
+        padding-top: 3rem;
+      }
     }
-}
 
 /* This applies styles when the screen is smaller than 768px wide */
 @media only screen and (max-width: 768px) {
@@ -482,7 +526,7 @@ box-shadow: 0px 0px 10px 0px rgb(195, 193, 193); /* Add box-shadow */
     /* This displays the links in a drop-down menu when the menu button is clicked */
     nav .links {
         position: absolute;
-        top: 100%;
+        top: 9%;
         left: -100%;
         width: 100%;
         height: 100vh;
@@ -514,13 +558,13 @@ box-shadow: 0px 0px 10px 0px rgb(195, 193, 193); /* Add box-shadow */
         text-align: center;
     }
     
-    /* Adds padding to the top of the product element*/
-    .product {
-        padding-top: 35%;
-    }
-    
+
     /* Sets the height of the homeimg element to the full viewport height*/
     #homeimg {
         height: 100vh;
     }
+    .about .container .image {
+        padding: 26rem 0;
+} 
+    
 }

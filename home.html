@@ -1,37 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Declares the document type and version of HTML -->
+<html lang="en"> <!-- Opening tag for HTML document, language set to English -->
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <head> <!-- Opening tag for the head element, contains meta-data that's not visible on the webpage -->
+        <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensures proper rendering and touch zooming in IE -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>黒Black It Out- Home</title>
-        <!-- Custom css -->
+        <!-- Makes the webpage look good on all devices -->
+        <title>Black It Out- Home</title> <!-- Sets the title of the webpage -->
+        <link rel="icon" href="img/logo.png" type="image/x-icon"> <!-- Sets the favicon for the webpage -->
+        <!-- Links to the external custom CSS file -->
         <link rel="stylesheet" href="style.css">
-        <!-- Font Awesome Cdn -->
+        <!-- Links to the external Font Awesome CDN for icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
         <script src="script.js" defer></script>
-    </head>
+        <!-- Links to the external JavaScript file, it will be executed after the page has finished parsing -->
+    </head> <!-- Closing tag for the head element -->
 
-    <body>
+    <body> <!-- Opening tag for the body element, contains all the visible content of the webpage -->
         <!-- Header Section -->
         <header class="header" id="homeimg">
 
-            <nav id="navbar">
-                <a href="home.html" class="logo">黒Black It Out</a>
-                <div class="links" id="nav">
-                    <a href="home.html">Home</a>
-                    <a href="shop.html">Shop</a>
-                    <a href="contact.html ">Contact</a>
-                </div>
+            <nav id="navbar"> <!-- Opening tag for the nav element, contains the navigation links -->
+                <a href="home.html" class="logo">黒Black It Out</a> <!-- Logo which links to the homepage -->
+                <div class="links" id="nav"> <!-- Navigation links wrapped in a div -->
+                    <a href="home.html">Home</a> <!-- Link to Home page -->
+                    <a href="shop.html">Shop</a> <!-- Link to Shop page -->
+                    <a href="contact.html ">Contact</a> <!-- Link to Contact page -->
+                </div> <!-- Closing tag for the div element -->
                 <div class="fas fa-bars" id="menu-btn" onclick="openmenu()"></div>
+                <!-- Menu button with an onclick event to open the menu -->
                 <div class="fa-solid fa-xmark" id="close" onclick="closemenu()"></div>
-            </nav>
-            <div class="content">
+                <!-- Close button with an onclick event to close the menu -->
+            </nav> <!-- Closing tag for the nav element -->
+            <div class="content"> <!-- Opening tag for the div element, contains the content of the header -->
                 <h1>Let us help you black out your
-                    <br> environment with cool wallpaper.
+                    <br> environment with cool wallpaper. <!-- Header text with line break -->
                 </h1>
-                <p>Welcome to Black It Out. Here you will find cool dark designs for your iPad, iPhone, or laptop. <br>
+                <!-- Paragraph text with inline CSS to change the color -->
+                <p style="color: rgb(238, 240, 255);">Welcome to Black It Out. Here you will find cool dark designs for
+                    your
+                    iPad,
+                    iPhone, or laptop. <br>
                     Our
                     selection
                     of designs includes everything from sleek black cases to intricate patterns that play <br> with
@@ -39,30 +48,70 @@
                     shadow.
                     Whether you're looking for a minimalist look or a bold statement piece,<br> we have something for
                     you.</p>
-                <button class="btn">Shop Now</button>   
-            </div>
-        </header>
+                <button class="btn">Shop Now</button> <!-- Button linking to the shop -->
+            </div> <!-- Closing tag for the div element -->
+        </header> <!-- Closing tag for the header element -->
         <!-- Header Section End -->
-        <main>
-            <section class="product" id="product">
-                <h1 class="heading">News</h1>
-                <div class="container">
-                    <div class="product-box">
-                        <div class="product-img">
-                            <img src="img/phoneCase1.png" alt="Product">
-                        </div>
-                        <div class="product-content">
-                            <h1>Be Cool </h1>
+
+        <!-- Main Section -->
+        <main> <!-- Opening tag for the main element, contains the main content of the webpage -->
+
+            <div class="hr-container"> <!-- Opening tag for the divider container -->
+                <div class="dot"></div> <!-- Decorative dot element -->
+                <hr class="hr"> <!-- Horizontal rule -->
+                <div class="dot"></div> <!-- Decorative dot element -->
+            </div> <!-- Closing tag for the divider container -->
+
+            <section class="about" id="about"> <!-- Opening tag for the about section -->
+
+                <div class="container"> <!-- Opening tag for the container -->
+
+                    <div class="about-content"> <!-- Opening tag for the about content -->
+                        <h1>What makes our phone cases special?</h1> <!-- Header text -->
+                        <h3>Crafted with expertise and quality.</h3> <!-- Subheader text -->
+                        <!-- Paragraph text -->
+                        <p>Our phone cases are designed with a unique combination of high-quality materials, expert
+                            craftsmanship, and attention to detail. We source only the best materials from around the
+                            world, ensuring that each phone case is not only stylish but also durable and protective.
+                            Our expert craftsmen carefully construct each phone case, ensuring that it fits your phone
+                            perfectly and provides easy access to all buttons and ports. Our attention to detail means
+                            that our phone cases not only look great but also function perfectly, providing the
+                            protection your phone needs while also showcasing its sleek black design.</p>
+                        <a href="contact.html"> <button class="btn" style="color: black;">About Us</button></a>
+                        <!-- Button linking to the About Us page -->
+                    </div> <!-- Closing tag for the about content -->
+                </div> <!-- Closing tag for the container -->
+            </section> <!-- Closing tag for the about section -->
+
+            <!-- Repeating the divider container -->
+            <div class="hr-container">
+                <div class="dot"></div>
+                <hr class="hr">
+                <div class="dot"></div>
+            </div>
+
+            <section class="product" id="product"> <!-- Opening tag for the product section -->
+                <h1 class="heading">News</h1> <!-- Header text -->
+                <div class="container"> <!-- Opening tag for the container -->
+                    <!-- Repeating product-box for each product -->
+                    <div class="product-box"> <!-- Opening tag for the product-box -->
+                        <div class="product-img"> <!-- Opening tag for the product-img -->
+                            <img src="img/phoneCase1.png" alt="Product"> <!-- Product image -->
+                        </div> <!-- Closing tag for the product-img -->
+                        <div class="product-content"> <!-- Opening tag for the product-content -->
+                            <h3>Be Cool </h3> <!-- Product name -->
+                            <!-- Product description -->
                             <p> A minimalist case phone with japanse letter. Saying かっこよくなる which can be translate as be
                                 cool</p>
-                        </div>
-                    </div>
+                        </div> <!-- Closing tag for the product-content -->
+                    </div> <!-- Closing tag for the product-box -->
+                    <!-- Repeating product-box for each product -->
                     <div class="product-box">
                         <div class="product-img">
                             <img src="img/phoneCase2.png" alt="Product">
                         </div>
                         <div class="product-content">
-                            <h1> Make it black </h1>
+                            <h3> Make it black </h3>
                             <p>The gray texture adding to phone case make it more but less, suitable for your everyday
                                 look. The japanese letter which help to make it more cool but meaning as make it black
                             </p>
@@ -73,7 +122,7 @@
                             <img src="img/phoneCase3.png" alt="Product">
                         </div>
                         <div class="product-content">
-                            <h1>Adam</h1>
+                            <h3>Adam</h3>
                             <p>isn't it cool to have your own name in your phone case? Lest us do the job and enjoy to
                                 coolness with some black style.</p>
                         </div>
@@ -81,49 +130,103 @@
                 </div>
                 <button class="btn shop-btn">Shop Now</button>
             </section>
-        </main>
-        <!-- Footer Section -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-box">
-                    <h3>About us </h3>
-                    <p>Welcome to Black It Out, where we provide you with high-quality black phone cases and wallpapers
-                        for your
-                        mobile devices. We are passionate about designing sleek and stylish products that protect your
-                        device while
-                        making a statement.</p>
-                    <p>Copyrights &copy; 2023 All rights reserved By<a href="home.html" id="copyright"> 黒 Black It
-                            Out</a></p>
-                </div>
-                <hr>
 
-                <div class="footer-box">
-                    <h3>Newsletter</h3>
-                    <p>Stay updated with our latests</p>
-                    <form>
-                        <input type="email" name="email" placeholder="BlackItOut@blackout.com">
-                        <button type="submit"><i class="fa-solid fa-right-long"></i></button>
-                    </form>
-                </div>
-                <hr>
-                <div class="footer-box">
-                    <h3>Follow Us</h3>
-                    <p>Connect With Us On:</p>
-                    <div>
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    </div>
-
-                </div>
-
-
+            <div class="hr-container">
+                <div class="dot"></div>
+                <hr class="hr">
+                <div class="dot"></div>
             </div>
+
+            <section class="product" id="product">
+                <h1 class="heading">Most popular</h1>
+                <div class="container">
+                    <div class="product-box">
+                        <div class="product-img">
+                            <img src="img/phoneCase8.png" alt="Product">
+                        </div>
+                        <div class="product-content">
+                            <h3>Sad Emoji</h3>
+                            <p>Express your mood with a phone case that features a white, sad emoji. This playful case
+                                is perfect for those who enjoy adding a touch of humor to their accessories.</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-img">
+                            <img src="img/phoneCase12.png" alt="Product">
+                        </div>
+                        <div class="product-content">
+                            <h3>Japanese Black</h3>
+                            <p>Elevate your style with a phone case that features Japanese characters that translate to
+                                "black." This subtle yet cool design element adds a touch of sophistication to your
+                                phone.</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-img">
+                            <img src="img/phoneCase13.png" alt="Product">
+                        </div>
+                        <div class="product-content">
+                            <h3>Ink Drop</h3>
+                            <p>Add a touch of artistic flair to your phone with a case that features a unique ink drop
+                                design. This eye-catching design is perfect for those who enjoy bold and creative
+                                accessories.</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-img">
+                            <img src="img/phoneCase14.png" alt="Product">
+                        </div>
+                        <div class="product-content">
+                            <h3>Three Bats</h3>
+                            <p>Add some edge to your phone with a case that features three bats. This cool design
+                                element is perfect for those who love dark and spooky accessories.</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-img">
+                            <img src="img/phoneCase4.png" alt="Product">
+                        </div>
+                        <div class="product-content">
+                            <h3>Mood Enhancer</h3>
+                            <p>Add a touch of attitude to your phone with a case that reads "bad mood." This statement
+                                piece is sure to turn heads and elevate your look.</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-img">
+                            <img src="img/phoneCase5.png" alt="Product">
+                        </div>
+                        <div class="product-content">
+                            <h3>Record in Style</h3>
+                            <p>Upgrade your phone's camera with a case that boasts video recording capabilities. Capture
+                                your favorite moments with ease and in style.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Repeating product ends-->
+                <button class="btn shop-btn">Shop Now</button> <!-- Shop now button -->
+            </section> <!-- Product section ends -->
+        </main> <!-- Main section ends -->
+
+        <!-- Footer Section -->
+        <footer class="footer"> <!-- Opening tag for the footer -->
+            <div class="social-icons"> <!-- Opening tag for the social-icons -->
+                <h3>Follow Us</h3> <!-- Social media heading -->
+                <!-- Social media icons -->
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div> <!-- Closing tag for the social-icons -->
+
+            <div class="newsletter"> <!-- Opening tag for the newsletter -->
+                <h3>Subscribe to our newsletter</h3> <!-- Newsletter heading -->
+                <form action="#" method="post" id="subscribe"> <!-- Opening tag for the form -->
+                    <input type="email" name="email" placeholder="Enter your email" required> <!-- Email input -->
+                    <button type="submit">Subscribe</button> <!-- Subscribe button -->
+                </form> <!-- Closing tag for the form -->
+            </div> <!-- Closing tag for the newsletter -->
         </footer>
-        <!-- Footer Section-->
+        <!-- Footer Section End -->
+    </body> <!-- Body section ends -->
 
-
-
-    </body>
-
-</html>
+</html> <!-- HTML section ends -->
